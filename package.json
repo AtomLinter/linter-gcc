@@ -1,0 +1,40 @@
+{
+  "name": "linter-gcc",
+  "main": "./lib/main",
+  "version": "0.0.0",
+  "description": "Lint C-based files using gcc/g++",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hebaishi/linter-gcc"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-linter": "^2.0.5"
+  },
+  "devDependencies": {
+    "eslint": "latest"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "browser": true,
+      "node": true
+    },
+    "ecmaFeatures": {
+      "modules": true
+    },
+    "globals": {
+      "atom": true
+    }
+  }
+}
