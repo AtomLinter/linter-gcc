@@ -4,6 +4,6 @@
 ## 0.1.1
 * Cleaned up settings taken from linter-clang
 
-## 0.2.1
+## 0.2.0
 * Added Screenshot to README
 * Added project-specific settings
