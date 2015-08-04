@@ -18,3 +18,6 @@
 ## 0.3.1
 * Added relative path expansion to execPath parameter
 * Added debug logging to console
+
+## 0.3.2
+* Root folder is file path if no projects present
