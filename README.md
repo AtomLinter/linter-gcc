@@ -24,7 +24,7 @@ Just place a file called ```.gcc-flags.json``` in your project root, with the fo
   "gccSuppressWarnings": true
 }
 ```
-Note that the include paths need to be separated by commas. If this file is present, it will replace the settings you specified in the settings window. Relative paths (starting with ```.``` or ```..```) are expanded with respect to project root.
+Note that the include paths need to be separated by commas. If this file is present, it will replace the settings you specified in the settings window. Relative paths (starting with ```.``` or ```..```) are expanded with respect to project root. Both ```execPath``` and ```gccIncludePaths``` are expanded.
 
 Currently, this only works for the first project folder you have. The JSON file gets reloaded every time you add/remove a project folder.
 
@@ -33,3 +33,5 @@ Press ctrl and ',' or cmd and ',' , click on 'Packages', search 'linter gcc', or
 ```
 $ apm install linter-gcc
 ```
+### Debugging
+Executable path and all arguments are written to the console on file save, so just open the console to see the values of these parameters.

@@ -14,3 +14,7 @@
 ## 0.3.0
 * .gcc-flags.json now reloaded on file save
 * Relative paths expanded with respect to project root
+
+## 0.3.1
+* Added relative path expansion to execPath parameter
+* Added debug logging to console
