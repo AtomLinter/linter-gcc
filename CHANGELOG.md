@@ -21,3 +21,6 @@
 
 ## 0.3.2
 * Root folder is file path if no projects present
+
+## 0.3.3
+* Fixed bug in getting file path
