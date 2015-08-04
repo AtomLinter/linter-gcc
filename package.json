@@ -1,7 +1,7 @@
 {
   "name": "linter-gcc",
   "main": "./lib/main",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Lint C-based files using gcc/g++",
   "repository": {
     "type": "git",
