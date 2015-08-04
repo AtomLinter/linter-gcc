@@ -10,3 +10,7 @@
 
 ## 0.2.1
 * Fixed .gcc-flags.json cache issue
+
+## 0.3.0
+* .gcc-flags.json now reloaded on file save
+* Relative paths expanded with respect to project root

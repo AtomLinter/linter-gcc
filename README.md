@@ -24,7 +24,7 @@ Just place a file called ```.gcc-flags.json``` in your project root, with the fo
   "gccSuppressWarnings": true
 }
 ```
-Note that the include paths need to be separated by commas. If this file is present, it will override the settings you specified in the settings window.
+Note that the include paths need to be separated by commas. If this file is present, it will replace the settings you specified in the settings window. Relative paths (starting with ```.``` or ```..```) are expanded with respect to project root.
 
 Currently, this only works for the first project folder you have. The JSON file gets reloaded every time you add/remove a project folder.
 
