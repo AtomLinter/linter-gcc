@@ -7,3 +7,6 @@
 ## 0.2.0
 * Added Screenshot to README
 * Added project-specific settings
+
+## 0.2.1
+* Fixed .gcc-flags.json cache issue
