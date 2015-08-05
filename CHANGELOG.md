@@ -1,3 +1,6 @@
+## 0.3.6
+* Merge [Kepler](https://github.com/k2b6s9j)'s pull request to improve regex type capture
+
 ## 0.3.5
 * Added descriptive keywords
 
