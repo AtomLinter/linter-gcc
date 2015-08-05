@@ -3,6 +3,15 @@
   "main": "./lib/main",
   "version": "0.3.4",
   "description": "Lint C and C++ source files using gcc / g++",
+  "keywords": [
+  "lint",
+  "linter",
+  "c",
+  "c++",
+  "gcc",
+  "g++",
+  "error"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/hebaishi/linter-gcc"

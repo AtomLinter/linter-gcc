@@ -1,3 +1,6 @@
+## 0.3.5
+* Added descriptive keywords
+
 ## 0.3.4
 * Updated description to be more search-friendly
 * Re-ordered CHANGELOG.md so newest version is on top
