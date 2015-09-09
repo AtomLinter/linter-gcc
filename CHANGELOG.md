@@ -1,3 +1,6 @@
+## 0.3.8
+* Fixed problem with parsing of multiple 'include paths' if some were empty.
+
 ## 0.3.7
 * Fixed problem where an empty 'include paths' parameter prevented linting.
 
