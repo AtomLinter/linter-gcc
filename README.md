@@ -34,4 +34,4 @@ Press ctrl and ',' or cmd and ',' , click on 'Packages', search 'linter gcc', or
 $ apm install linter-gcc
 ```
 ### Debugging
-Executable path and all arguments are written to the console on file save, so just open the console to see the values of these parameters.
+The command executed by linter-gcc is written to the console on file save, so simply open the console to see the full command. Please ensure that you have a working gcc/g++ compiler before submitting an issue.

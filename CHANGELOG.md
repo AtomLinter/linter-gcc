@@ -1,3 +1,7 @@
+## 0.3.9
+* Fixed problem where fatal errors were ignored by the linter.
+* Improved debugging output - full command printed directly.
+
 ## 0.3.8
 * Fixed problem with parsing of multiple 'include paths' if some were empty.
 
