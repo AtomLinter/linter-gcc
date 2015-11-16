@@ -1,3 +1,7 @@
+## 0.4.0
+* Fixed leading space being added to message
+* Added travis CI integration
+
 ## 0.3.9
 * Fixed problem where fatal errors were ignored by the linter.
 * Improved debugging output - full command printed directly.
