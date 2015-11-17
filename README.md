@@ -1,4 +1,5 @@
 # linter-gcc package
+[![Build Status](https://travis-ci.org/hebaishi/linter-gcc.svg?branch=master)](https://travis-ci.org/hebaishi/linter-gcc)
 
 Linter plugin for [Linter](https://github.com/AtomLinter/Linter), provides an interface to gcc/g++.
 
