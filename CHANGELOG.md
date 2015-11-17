@@ -1,3 +1,6 @@
+## 0.4.1
+* Added build image to README.md
+
 ## 0.4.0
 * Fixed leading space being added to message
 * Added travis CI integration
