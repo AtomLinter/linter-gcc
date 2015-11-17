@@ -1,4 +1,4 @@
-language: C++
+language: objective-c
 
 notifications:
   email:

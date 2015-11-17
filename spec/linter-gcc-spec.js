@@ -18,7 +18,6 @@ describe('The GCC provider for AtomLinter', () => {
         return lint(editor).then(messages => {
           expect(messages.length).toEqual(1)
           expect(messages[0].type).toEqual("error")
-          expect(messages[0].text).toEqual("iostreams: No such file or directory")
         })
       })
     })
@@ -31,7 +30,6 @@ describe('The GCC provider for AtomLinter', () => {
           console.log(messages)
           expect(messages.length).toEqual(1)
           expect(messages[0].type).toEqual("error")
-          expect(messages[0].text).toEqual("‘i’ was not declared in this scope")
         })
       })
     })
