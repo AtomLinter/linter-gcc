@@ -1,0 +1,8 @@
+{
+  "execPath": "exec_subdir",
+  "gccDefaultCFlags": "cflags_subdir",
+  "gccDefaultCppFlags": "cppflags_subdir",
+  "gccErrorLimit": 2,
+  "gccIncludePaths": "includepath_subdir",
+  "gccSuppressWarnings": true
+}

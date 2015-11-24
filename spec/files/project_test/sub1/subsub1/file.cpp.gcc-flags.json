@@ -1,0 +1,8 @@
+{
+  "execPath": "exec_file",
+  "gccDefaultCFlags": "cflags_file",
+  "gccDefaultCppFlags": "cppflags_file",
+  "gccErrorLimit": 1,
+  "gccIncludePaths": "includepath_file",
+  "gccSuppressWarnings": true
+}

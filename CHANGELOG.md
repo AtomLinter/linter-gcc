@@ -1,3 +1,7 @@
+## 0.5.0
+* Added hierarchical configuration options
+* Added unit tests for file/directory-specific settings
+
 ## 0.4.1
 * Added build image to README.md
 

@@ -1,0 +1,8 @@
+{
+  "execPath": "exec_project",
+  "gccDefaultCFlags": "cflags_project",
+  "gccDefaultCppFlags": "cppflags_project",
+  "gccErrorLimit": 3,
+  "gccIncludePaths": "includepath_project",
+  "gccSuppressWarnings": false
+}
