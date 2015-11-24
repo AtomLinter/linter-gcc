@@ -14,6 +14,7 @@ Heavily modified fork of [linter-clang](https://github.com/AtomLinter/linter-cla
 ## File/Project-Specific settings
 
 Assuming you have the a file called ```sample.cpp``` open, linter-gcc performs the following actions:
+
 1. Looks for file called ```sample.cpp.gcc-flags.json``` in the same directory as your source file (file-specific settings)
 2. Looks for a file called ```.gcc-flags.json``` in every subdirectory from the current up to your project root (subdirectory/project-specific settings)
 3. If no ```.gcc-flags.json``` is found, the settings in your configuration page are used.
