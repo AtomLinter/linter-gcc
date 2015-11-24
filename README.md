@@ -5,7 +5,7 @@ Linter plugin for [Linter](https://github.com/AtomLinter/Linter), provides an in
 
 Used with files with grammar "C" and "C++".
 
-Clone of [linter-clang](https://github.com/AtomLinter/linter-clang) by [Kepler](https://github.com/k2b6s9j).
+Heavily modified fork of [linter-clang](https://github.com/AtomLinter/linter-clang) by [Kepler](https://github.com/k2b6s9j).
 
 ## Screenshot
 
