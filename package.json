@@ -31,7 +31,7 @@
     "atom-linter": "^2.0.5",
     "atom-package-deps": "^2.0.1"
   },
-  "packages-deps": [
+  "package-deps": [
     "linter"
   ],
   "devDependencies": {

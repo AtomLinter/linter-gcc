@@ -1,3 +1,6 @@
+## 0.5.4
+* Corrected error in package manifest
+
 ## 0.5.3
 * Correctly atom-package-deps to manifest and main.js
 
