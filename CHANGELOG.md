@@ -1,3 +1,6 @@
+## 0.5.2
+* Removed atom-package-deps
+
 ## 0.5.1
 * Added package-deps for automatic installation of base linter
 
