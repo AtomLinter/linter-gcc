@@ -30,6 +30,9 @@
   "dependencies": {
     "atom-linter": "^2.0.5"
   },
+  "packages-deps": [
+    "linter"
+  ],
   "devDependencies": {
     "eslint": "latest"
   },
