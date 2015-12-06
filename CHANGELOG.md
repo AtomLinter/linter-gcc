@@ -1,3 +1,6 @@
+## 0.5.3
+* Correctly atom-package-deps to manifest and main.js
+
 ## 0.5.2
 * Removed atom-package-deps
 

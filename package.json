@@ -28,7 +28,8 @@
     }
   },
   "dependencies": {
-    "atom-linter": "^2.0.5"
+    "atom-linter": "^2.0.5",
+    "atom-package-deps": "^2.0.1"
   },
   "packages-deps": [
     "linter"
