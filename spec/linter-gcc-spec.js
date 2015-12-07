@@ -48,6 +48,38 @@ describe('The GCC provider for AtomLinter', () => {
     })
   })
 
+  it('finds an error in "missing_include.c"', () => {
+    waitsForPromise(() => {
+      return atom.workspace.open(__dirname + '/files/missing_include.c').then(editor => {
+        return lint(editor).then(messages => {
+          expect(messages.length).toEqual(1)
+          expect(messages[0].type).toEqual("error")
+        })
+      })
+    })
+  })
+
+  it('finds an error in "error.c"', () => {
+    waitsForPromise(() => {
+      return atom.workspace.open(__dirname + '/files/error.c').then(editor => {
+        return lint(editor).then(messages => {
+          expect(messages.length).toEqual(1)
+          expect(messages[0].type).toEqual("error")
+        })
+      })
+    })
+  })
+
+  it('finds no errors in "comment.c"', () => {
+    waitsForPromise(() => {
+      return atom.workspace.open(__dirname + '/files/comment.c').then(editor => {
+        return lint(editor).then(messages => {
+          expect(messages.length).toEqual(0)
+        })
+      })
+    })
+  })
+
   it('Uses default settings when no config file is found', () => {
     waitsForPromise(() => {
       return atom.workspace.open(__dirname + '/files/comment.cpp').then(() => {

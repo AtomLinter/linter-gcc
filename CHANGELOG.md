@@ -1,3 +1,6 @@
+## 0.5.5
+* Added unit tests for C source files
+
 ## 0.5.4
 * Corrected error in package manifest
 
