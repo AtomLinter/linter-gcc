@@ -1,3 +1,6 @@
+## 0.5.6
+* Beautify and add descriptions to package settings.
+
 ## 0.5.5
 * Added unit tests for C source files
 
