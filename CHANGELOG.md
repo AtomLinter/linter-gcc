@@ -1,3 +1,6 @@
+## 0.5.7
+* Add command-line error detection
+
 ## 0.5.6
 * Beautify and add descriptions to package settings.
 
