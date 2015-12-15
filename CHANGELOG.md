@@ -1,3 +1,6 @@
+## 0.5.8
+* Add GCC to messages to play nice with linter-clang
+
 ## 0.5.7
 * Add command-line error detection
 
