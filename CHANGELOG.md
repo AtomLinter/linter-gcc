@@ -1,3 +1,6 @@
+## 0.5.9
+* Add compile flag to GCC command
+
 ## 0.5.8
 * Add GCC to messages to play nice with linter-clang
 
