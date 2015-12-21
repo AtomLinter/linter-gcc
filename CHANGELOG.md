@@ -1,3 +1,6 @@
+## 0.5.10
+* Removed compile flag to fix problem with GCC on OSX, moved option to config page
+
 ## 0.5.9
 * Add compile flag to GCC command
 
