@@ -29,7 +29,8 @@
   },
   "dependencies": {
     "atom-linter": "^2.0.5",
-    "atom-package-deps": "^2.0.1"
+    "atom-package-deps": "^2.0.1",
+    "shelljs": "^0.5.0"
   },
   "package-deps": [
     "linter"

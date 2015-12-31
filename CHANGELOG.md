@@ -1,3 +1,6 @@
+## 0.5.11
+* Add Cross-platform ```$PATH``` expansion
+
 ## 0.5.10
 * Removed compile flag to fix problem with GCC on OSX, moved option to config page
 
