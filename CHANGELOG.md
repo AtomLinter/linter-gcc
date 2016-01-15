@@ -1,3 +1,7 @@
+## 0.5.12
+* Fix error with having a file open but no project.
+* Add usage notes for ```-fsyntax-only``` and ```-c``` flags.
+
 ## 0.5.11
 * Add Cross-platform ```$PATH``` expansion
 

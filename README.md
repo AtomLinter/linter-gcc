@@ -38,6 +38,10 @@ Note that the include paths need to be separated by commas. If this file is pres
 
 In order to avoid unwanted behavior associated with having multiple projects open, only the paths within the first project are used, and the package limits its search to 30 levels when looking for a configuration file. You can work with multiple projects, as long as each is open in a separate window. Additionally, within each project, you may have as many file/directory-specific configuration files as you wish.
 
+### Usage notes:
+* Add ```-fsyntax-only``` to your C/C++ compilation flags to prevent the generation of ```.gch``` files when linting headers
+* Add ```-c``` to your flags to avoid linking errors.
+
 ### Plugin installation
 Press ctrl and ',' or cmd and ',' , click on 'Packages', search 'linter gcc', or:
 ```
