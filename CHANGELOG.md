@@ -1,3 +1,6 @@
+## 0.5.13
+* Add note to README.md about linting on-the-fly
+
 ## 0.5.12
 * Fix error with having a file open but no project.
 * Add usage notes for ```-fsyntax-only``` and ```-c``` flags.
