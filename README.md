@@ -41,6 +41,7 @@ In order to avoid unwanted behavior associated with having multiple projects ope
 ### Usage notes:
 * Add ```-fsyntax-only``` to your C/C++ compilation flags to prevent the generation of ```.gch``` files when linting headers
 * Add ```-c``` to your flags to avoid linking errors.
+* Please do not create issues asking for linting on-the-fly. It has been disabled for performance reasons. linter-gcc lints by compilation of the source file, and compiling a source file with every keystroke is simply not feasible.
 
 ### Plugin installation
 Press ctrl and ',' or cmd and ',' , click on 'Packages', search 'linter gcc', or:
