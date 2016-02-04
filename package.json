@@ -27,10 +27,19 @@
       }
     }
   },
+  "consumedServices": {
+  "linter-indie": {
+    "versions": {
+      "1.0.0": "consumeLinter"
+    }
+   }
+    },
   "dependencies": {
-    "atom-linter": "^2.0.5",
+    "atom-linter": "=4.3.4",
     "atom-package-deps": "^2.0.1",
-    "shelljs": "^0.5.0"
+    "shelljs": "^0.5.0",
+    "fs-extra": "^0.26.1",
+    "tempfile": "^1.1.0"
   },
   "package-deps": [
     "linter"
