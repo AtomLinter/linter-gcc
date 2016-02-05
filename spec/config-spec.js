@@ -1,6 +1,6 @@
 "use babel";
 
-describe('Utility function tests', () => {
+describe('Configuration function tests', () => {
   const main = require('../lib/main')
   const utility = require('../lib/utility.js')
   var settings = require("../lib/config").settings
