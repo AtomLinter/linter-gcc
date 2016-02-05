@@ -1,7 +1,7 @@
 "use babel";
 
 describe('Utility functions', () => {
-  const lint = require('../lib/main.js')
+  const main = require('../lib/main.js')
   var settings = require("../lib/config").settings
 
   beforeEach(() => {
@@ -22,7 +22,7 @@ describe('Utility functions', () => {
   it('returns an editor for a C++ file', () => {
     waitsForPromise(() => {
       return atom.workspace.open(__dirname + '/files/missing_include.cpp').then(editor => {
-        expect(lint.getValidEditor(editor)).toBeDefined();
+        expect(main.getValidEditor(editor)).toBeDefined();
       })
     })
   })
@@ -30,15 +30,15 @@ describe('Utility functions', () => {
   it('returns an editor for a C file', () => {
     waitsForPromise(() => {
       return atom.workspace.open(__dirname + '/files/missing_include.c').then(editor => {
-        expect(lint.getValidEditor(editor)).toBeDefined();
+        expect(main.getValidEditor(editor)).toBeDefined();
       })
     })
   })
 
   it('returns undefined for a javascript file', () => {
     waitsForPromise(() => {
-      return atom.workspace.open(__dirname + 'utility.js').then(editor => {
-        expect(lint.getValidEditor(editor)).not.toBeDefined();
+      return atom.workspace.open(__dirname + '/../lib/utility.js').then(editor => {
+        expect(main.getValidEditor(editor)).not.toBeDefined();
       })
     })
   })
