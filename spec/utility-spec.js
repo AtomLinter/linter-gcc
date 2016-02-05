@@ -23,18 +23,14 @@ describe('Utility functions', () => {
     waitsForPromise(() => {
       return atom.workspace.open(__dirname + '/files/missing_include.cpp').then(editor => {
         expect(lint.getValidEditor(editor)).toBeDefined();
-        // expect(lint.messages.length).toEqual(1)
-        // expect(messages[0].type).toEqual("error")
       })
     })
   })
 
   it('returns an editor for a C file', () => {
     waitsForPromise(() => {
-      return atom.workspace.open(__dirname + '/files/missing_include.cpp').then(editor => {
+      return atom.workspace.open(__dirname + '/files/missing_include.c').then(editor => {
         expect(lint.getValidEditor(editor)).toBeDefined();
-        // expect(lint.messages.length).toEqual(1)
-        // expect(messages[0].type).toEqual("error")
       })
     })
   })
@@ -43,8 +39,6 @@ describe('Utility functions', () => {
     waitsForPromise(() => {
       return atom.workspace.open(__dirname + 'utility.js').then(editor => {
         expect(lint.getValidEditor(editor)).not.toBeDefined();
-        // expect(lint.messages.length).toEqual(1)
-        // expect(messages[0].type).toEqual("error")
       })
     })
   })

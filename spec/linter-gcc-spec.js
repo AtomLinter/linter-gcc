@@ -1,7 +1,8 @@
 "use babel";
 
 describe('The GCC provider for AtomLinter', () => {
-  const lint = require('../lib/main').provideLinter().lint
+  const main = require('../lib/main')
+  const utility = require('../lib/utility.js')
   var settings = require("../lib/config").settings
 
   beforeEach(() => {
@@ -12,69 +13,30 @@ describe('The GCC provider for AtomLinter', () => {
       atom.config.set('linter-gcc.gccErrorLimit', 15)
       atom.config.set('linter-gcc.gccIncludePaths', ' ')
       atom.config.set('linter-gcc.gccSuppressWarnings', true)
+      main.messages={};
       return atom.packages.activatePackage('linter-gcc')
     })
   })
 
-  it('finds an error in "missing_include.cpp"', () => {
+  it('finds one error in error.cpp', () => {
     waitsForPromise(() => {
-      return atom.workspace.open(__dirname + '/files/missing_include.cpp').then(editor => {
-        return lint(editor).then(messages => {
-          expect(messages.length).toEqual(1)
-          expect(messages[0].type).toEqual("error")
+      filename = __dirname + '/files/error.cpp'
+      return atom.workspace.open(filename).then(editor => {
+        main.lint(editor, editor.getPath(), editor.getPath()).then(function(){
+          var length = utility.flattenHash(main.messages).length
+          expect(length).toEqual(1);
         })
       })
     })
   })
 
-  it('finds an error in "error.cpp"', () => {
+  it('finds no errors in comment.cpp', () => {
     waitsForPromise(() => {
-      return atom.workspace.open(__dirname + '/files/error.cpp').then(editor => {
-        return lint(editor).then(messages => {
-          expect(messages.length).toEqual(1)
-          expect(messages[0].type).toEqual("error")
-        })
-      })
-    })
-  })
-
-  it('finds no errors in "comment.cpp"', () => {
-    waitsForPromise(() => {
-      return atom.workspace.open(__dirname + '/files/comment.cpp').then(editor => {
-        return lint(editor).then(messages => {
-          expect(messages.length).toEqual(0)
-        })
-      })
-    })
-  })
-
-  it('finds an error in "missing_include.c"', () => {
-    waitsForPromise(() => {
-      return atom.workspace.open(__dirname + '/files/missing_include.c').then(editor => {
-        return lint(editor).then(messages => {
-          expect(messages.length).toEqual(1)
-          expect(messages[0].type).toEqual("error")
-        })
-      })
-    })
-  })
-
-  it('finds an error in "error.c"', () => {
-    waitsForPromise(() => {
-      return atom.workspace.open(__dirname + '/files/error.c').then(editor => {
-        return lint(editor).then(messages => {
-          expect(messages.length).toEqual(1)
-          expect(messages[0].type).toEqual("error")
-        })
-      })
-    })
-  })
-
-  it('finds no errors in "comment.c"', () => {
-    waitsForPromise(() => {
-      return atom.workspace.open(__dirname + '/files/comment.c').then(editor => {
-        return lint(editor).then(messages => {
-          expect(messages.length).toEqual(0)
+      filename = __dirname + '/files/comment.cpp'
+      return atom.workspace.open(filename).then(editor => {
+        main.lint(editor, editor.getPath(), editor.getPath()).then(function(){
+          var length = utility.flattenHash(main.messages).length
+          expect(length).toEqual(0);
         })
       })
     })
