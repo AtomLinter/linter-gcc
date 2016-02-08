@@ -1,3 +1,6 @@
+# 0.6.1
+* Add C++14 support
+
 # 0.6.0
 * Add lint on-the-fly!
 
