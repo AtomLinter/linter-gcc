@@ -1,3 +1,6 @@
+# 0.6.3
+* Add lint on-the-fly animation to README.md
+
 # 0.6.2
 * Complete C++14 support
 

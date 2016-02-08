@@ -9,7 +9,7 @@ Now with linting on-the-fly! This is a new feature so please open an issue if yo
 
 ## Screenshot
 
-![linter-gcc screenshot](https://github.com/hebaishi/images/blob/master/lintergcc-screenshot.png?raw=true)
+![linter-gcc screenshot](https://raw.githubusercontent.com/hebaishi/images/master/lintergcc_onthefly.gif)
 
 ## File/Project-Specific settings
 
