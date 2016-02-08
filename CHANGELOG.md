@@ -1,3 +1,7 @@
+# 0.6.4
+* Modify string split to accept escaped characters
+* Capture compile flag-related errors
+
 # 0.6.3
 * Add lint on-the-fly animation to README.md
 
