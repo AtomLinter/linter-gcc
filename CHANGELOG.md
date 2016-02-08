@@ -1,3 +1,6 @@
+# 0.6.0
+* Add lint on-the-fly!
+
 ## 0.5.13
 * Add note to README.md about linting on-the-fly
 
