@@ -41,7 +41,6 @@ In order to avoid unwanted behavior associated with having multiple projects ope
 ### Usage notes:
 * Add ```-fsyntax-only``` to your C/C++ compilation flags to prevent the generation of ```.gch``` files when linting headers
 * Add ```-c``` to your flags to avoid linking errors.
-* Please do not create issues asking for linting on-the-fly. It has been disabled for performance reasons. linter-gcc lints by compilation of the source file, and compiling a source file with every keystroke is simply not feasible.
 
 ### Plugin installation
 Press ctrl and ',' or cmd and ',' , click on 'Packages', search 'linter gcc', or:
@@ -50,3 +49,8 @@ $ apm install linter-gcc
 ```
 ### Debugging
 The command executed by linter-gcc is written to the console on file save, so simply open the console to see the full command. Also, all attempts to find a valid configuration file are logged to the console. Please ensure that you have a working gcc/g++ compiler before submitting an issue.
+
+To look for a working GCC simple type the following command into a terminal:
+```bash
+$ gcc --version
+```

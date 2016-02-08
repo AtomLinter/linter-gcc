@@ -1,8 +1,7 @@
 "use babel";
 
 describe('Utility functions', () => {
-  const main = require('../lib/main.js')
-  var settings = require("../lib/config").settings
+  const utility = require('../lib/utility.js')
 
   beforeEach(() => {
     waitsForPromise(() => {
@@ -22,7 +21,7 @@ describe('Utility functions', () => {
   it('returns an editor for a C++ file', () => {
     waitsForPromise(() => {
       return atom.workspace.open(__dirname + '/files/missing_include.cpp').then(editor => {
-        expect(main.getValidEditor(editor)).toBeDefined();
+        expect(utility.getValidEditor(editor)).toBeDefined();
       })
     })
   })
@@ -30,7 +29,7 @@ describe('Utility functions', () => {
   it('returns an editor for a C file', () => {
     waitsForPromise(() => {
       return atom.workspace.open(__dirname + '/files/missing_include.c').then(editor => {
-        expect(main.getValidEditor(editor)).toBeDefined();
+        expect(utility.getValidEditor(editor)).toBeDefined();
       })
     })
   })
@@ -38,8 +37,13 @@ describe('Utility functions', () => {
   it('returns undefined for a javascript file', () => {
     waitsForPromise(() => {
       return atom.workspace.open(__dirname + '/../lib/utility.js').then(editor => {
-        expect(main.getValidEditor(editor)).not.toBeDefined();
+        expect(utility.getValidEditor(editor)).not.toBeDefined();
       })
     })
   })
+
+  // it('Flattens an empty hash correctly', () => {
+  //   hash = {};
+  //   expect()
+  // })
 })

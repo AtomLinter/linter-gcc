@@ -36,7 +36,7 @@ describe('The GCC provider for AtomLinter', () => {
       return atom.workspace.open(filename).then(editor => {
         main.lint(editor, editor.getPath(), editor.getPath()).then(function(){
           var length = utility.flattenHash(main.messages).length
-          expect(length).toEqual(1);
+          expect(length).toEqual(0);
         })
       })
     })
@@ -60,7 +60,7 @@ describe('The GCC provider for AtomLinter', () => {
       return atom.workspace.open(filename).then(editor => {
         main.lint(editor, editor.getPath(), editor.getPath()).then(function(){
           var length = utility.flattenHash(main.messages).length
-          expect(length).toEqual(1);
+          expect(length).toEqual(0);
         })
       })
     })
