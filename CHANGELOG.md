@@ -1,3 +1,6 @@
+# 0.6.5
+* Beautify README.md
+
 # 0.6.4
 * Modify string split to accept escaped characters
 * Capture compile flag-related errors

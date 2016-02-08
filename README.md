@@ -1,13 +1,13 @@
-# linter-gcc package
-[![Build Status](https://travis-ci.org/hebaishi/linter-gcc.svg?branch=master)](https://travis-ci.org/hebaishi/linter-gcc)
+# linter-gcc
+[![Build Status](https://travis-ci.org/hebaishi/linter-gcc.svg?branch=master)](https://travis-ci.org/hebaishi/linter-gcc) ![apm](https://img.shields.io/apm/dm/linter-gcc.svg)
 
 Linter plugin for [Linter](https://github.com/AtomLinter/Linter), provides an interface to gcc/g++.
 
-Used with files with grammar "C" and "C++".
+Used with files with grammar "C", "C++" and ["C++14"](https://atom.io/packages/language-cpp14).
 
-Now with linting on-the-fly! This is a new feature so please open an issue if you encounter any problems.
+Now with linting **on-the-fly**! This is a new feature so please open an issue if you encounter any problems.
 
-## Screenshot
+## Linter in action!
 
 ![linter-gcc screenshot](https://raw.githubusercontent.com/hebaishi/images/master/lintergcc_onthefly.gif)
 
