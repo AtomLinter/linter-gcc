@@ -1,20 +1,26 @@
-# 0.6.5
+## 0.6.6
+* Streamline + make debug messages optional
+* Fix babel import error
+* Re-arrange package settings
+* Re-enable automatic dependency installation
+
+## 0.6.5
 * Beautify README.md
 
-# 0.6.4
+## 0.6.4
 * Modify string split to accept escaped characters
 * Capture compile flag-related errors
 
-# 0.6.3
+## 0.6.3
 * Add lint on-the-fly animation to README.md
 
-# 0.6.2
+## 0.6.2
 * Complete C++14 support
 
-# 0.6.1
+## 0.6.1
 * Add C++14 support
 
-# 0.6.0
+## 0.6.0
 * Add lint on-the-fly!
 
 ## 0.5.13
