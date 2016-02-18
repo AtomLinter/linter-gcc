@@ -46,15 +46,6 @@
     "linter"
   ],
   "devDependencies": {
-    "eslint": "latest",
-    "babel-eslint": "latest",
-    "eslint-config-atom-build": "latest"
-  },
-  "eslintConfig": {
-    "parser": "babel-eslint",
-    "rules": {
-      "new-cap": [ 2, { "capIsNewExceptions": [ "XRegExp" ] } ]
-    },
-    "extends": "atom-build"
+    "eslint": "latest"
   }
 }
