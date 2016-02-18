@@ -46,7 +46,8 @@
     "linter"
   ],
   "devDependencies": {
-    "eslint": "latest"
+    "eslint": "latest",
+    "babel-eslint": "latest"
   },
   "eslintConfig": {
     "env": {
