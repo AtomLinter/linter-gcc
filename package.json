@@ -44,8 +44,5 @@
   },
   "package-deps": [
     "linter"
-  ],
-  "devDependencies": {
-    "eslint": "latest"
-  }
+  ]
 }
