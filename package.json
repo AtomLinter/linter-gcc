@@ -47,6 +47,7 @@
   ],
   "devDependencies": {
     "eslint": "latest",
+    "babel-eslint": "latest",
     "eslint-config-atom-build": "latest"
   },
   "eslintConfig": {
