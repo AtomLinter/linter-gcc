@@ -47,10 +47,6 @@ Press ctrl and ',' or cmd and ',' , click on 'Packages', search 'linter gcc', or
 ```
 $ apm install linter-gcc
 ```
-### Debugging
-The command executed by linter-gcc is written to the console on file save, so simply open the console to see the full command. Also, all attempts to find a valid configuration file are logged to the console. Please ensure that you have a working gcc/g++ compiler before submitting an issue.
+### Reporting Issues
 
-To look for a working GCC simple type the following command into a terminal:
-```bash
-$ gcc --version
-```
+Please read the [Wiki](https://github.com/hebaishi/linter-gcc/wiki/) before reporting any issues.
