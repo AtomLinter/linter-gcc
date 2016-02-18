@@ -44,21 +44,5 @@
   },
   "package-deps": [
     "linter"
-  ],
-  "devDependencies": {
-    "eslint": "latest"
-  },
-  "eslintConfig": {
-    "env": {
-      "es6": true,
-      "browser": true,
-      "node": true
-    },
-    "ecmaFeatures": {
-      "modules": true
-    },
-    "globals": {
-      "atom": true
-    }
-  }
+  ]
 }
