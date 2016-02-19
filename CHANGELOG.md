@@ -1,3 +1,6 @@
+## 0.6.7
+* Re-factor + improve grammar type validation
+
 ## 0.6.6
 * Streamline + make debug messages optional
 * Fix babel import error
