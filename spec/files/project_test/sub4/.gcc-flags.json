@@ -1,7 +1,9 @@
 {
-  "execPath": "exec_updir",
+  "execCCPath": "exec_cc_updir",
+  "execFCPath": "exec_fc_updir",
   "gccDefaultCFlags": "cflags_updir",
   "gccDefaultCppFlags": "cppflags_updir",
+  "gccDefaultFortranFlags": "fortranflags_updir",
   "gccErrorLimit": 5,
   "gccIncludePaths": "includepath_updir",
   "gccSuppressWarnings": true

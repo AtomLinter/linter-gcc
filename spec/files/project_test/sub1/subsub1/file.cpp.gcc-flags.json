@@ -1,7 +1,9 @@
 {
-  "execPath": "exec_file",
+  "execCCPath": "exec_cc_file",
+  "execFCPath": "exec_fc_file",
   "gccDefaultCFlags": "cflags_file",
   "gccDefaultCppFlags": "cppflags_file",
+  "gccDefaultFortranFlags": "fortranflags_file",
   "gccErrorLimit": 1,
   "gccIncludePaths": "includepath_file",
   "gccSuppressWarnings": true
