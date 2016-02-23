@@ -15,6 +15,7 @@ describe('Utility functions', () => {
       atom.config.set('linter-gcc.gccSuppressWarnings', true)
       atom.config.set('linter-gcc.gccLintOnTheFly', false)
       atom.packages.activatePackage("language-c")
+      atom.packages.activatePackage("language-fortran")
       atom.packages.activatePackage("language-javascript")
       return atom.packages.activatePackage('linter-gcc')
     })
