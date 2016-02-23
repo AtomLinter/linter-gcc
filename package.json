@@ -43,7 +43,8 @@
     "split-string": "^0.1.0"
   },
   "package-deps": [
-    "linter"
+    "linter",
+    "language-fortran"
   ],
   "devDependencies": {
     "eslint": "latest"
