@@ -1,7 +1,9 @@
 {
-  "execPath": "exec_subdir",
+  "execCCPath": "exec_cc_subdir",
+  "execFCPath": "exec_fc_subdir",
   "gccDefaultCFlags": "cflags_subdir",
   "gccDefaultCppFlags": "cppflags_subdir",
+  "gccDefaultFortranFlags": "fortranflags_subdir",
   "gccErrorLimit": 2,
   "gccIncludePaths": "includepath_subdir",
   "gccSuppressWarnings": true

@@ -7,9 +7,11 @@ describe('The GCC provider for AtomLinter', () => {
 
   beforeEach(() => {
     waitsForPromise(() => {
-      atom.config.set('linter-gcc.execPath', '/usr/bin/g++')
+      atom.config.set('linter-gcc.execCCPath', '/usr/bin/g++')
+      atom.config.set('linter-gcc.execFCPath', '/usr/bin/gfortran')
       atom.config.set('linter-gcc.gccDefaultCFlags', '-Wall')
       atom.config.set('linter-gcc.gccDefaultCppFlags', '-Wall -std=c++11')
+      atom.config.set('linter-gcc.gccDefaultFortranFlags', '-Wall -cpp')
       atom.config.set('linter-gcc.gccErrorLimit', 15)
       atom.config.set('linter-gcc.gccIncludePaths', ' ')
       atom.config.set('linter-gcc.gccSuppressWarnings', true)
@@ -42,9 +44,57 @@ describe('The GCC provider for AtomLinter', () => {
     })
   })
 
+  it('finds no errors in comment.f', () => {
+    waitsForPromise(() => {
+      filename = __dirname + '/files/comment.f'
+      return atom.workspace.open(filename).then(editor => {
+        main.lint(editor, editor.getPath(), editor.getPath()).then(function(){
+          var length = utility.flattenHash(main.messages).length
+          expect(length).toEqual(0);
+        })
+      })
+    })
+  })
+
+  it('finds no errors in comment.f90', () => {
+    waitsForPromise(() => {
+      filename = __dirname + '/files/comment.f90'
+      return atom.workspace.open(filename).then(editor => {
+        main.lint(editor, editor.getPath(), editor.getPath()).then(function(){
+          var length = utility.flattenHash(main.messages).length
+          expect(length).toEqual(0);
+        })
+      })
+    })
+  })
+
   it('finds one error in error.c', () => {
     waitsForPromise(() => {
       filename = __dirname + '/files/error.c'
+      return atom.workspace.open(filename).then(editor => {
+        main.lint(editor, editor.getPath(), editor.getPath()).then(function(){
+          var length = utility.flattenHash(main.messages).length
+          expect(length).toEqual(1);
+        })
+      })
+    })
+  })
+
+  it('finds one error in error.f', () => {
+    waitsForPromise(() => {
+      filename = __dirname + '/files/error.f'
+      return atom.workspace.open(filename).then(editor => {
+        main.lint(editor, editor.getPath(), editor.getPath()).then(function(){
+          var length = utility.flattenHash(main.messages).length
+          expect(length).toEqual(1);
+        })
+      })
+    })
+  })
+
+  it('finds one error in error.f90', () => {
+    waitsForPromise(() => {
+      filename = __dirname + '/files/error.f90'
       return atom.workspace.open(filename).then(editor => {
         main.lint(editor, editor.getPath(), editor.getPath()).then(function(){
           var length = utility.flattenHash(main.messages).length
