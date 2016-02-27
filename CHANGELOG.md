@@ -1,3 +1,7 @@
+## 0.6.8
+* Use JSON Stringify workaround for string length error
+* Make temp file grammar-specific for linting on-the-fly
+
 ## 0.6.7
 * Re-factor + improve grammar type validation
 
