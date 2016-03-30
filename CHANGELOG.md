@@ -1,3 +1,6 @@
+## 0.6.9
+* Fix linter-gcc reporting incorrect filename
+
 ## 0.6.8
 * Use JSON Stringify workaround for string length error
 * Make temp file grammar-specific for linting on-the-fly
