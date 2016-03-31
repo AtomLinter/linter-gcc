@@ -7,54 +7,64 @@ describe('The GCC provider for AtomLinter', () => {
 
   beforeEach(() => {
     waitsForPromise(() => {
+      main.messages = {};
       atom.config.set('linter-gcc.execPath', '/usr/bin/g++')
-      atom.config.set('linter-gcc.gccDefaultCFlags', '-Wall')
-      atom.config.set('linter-gcc.gccDefaultCppFlags', '-Wall -std=c++11')
+      atom.config.set('linter-gcc.gccDefaultCFlags', '-c -Wall -o /dev/null')
+      atom.config.set('linter-gcc.gccDefaultCppFlags', '-c -Wall -std=c++11 -o /dev/null')
       atom.config.set('linter-gcc.gccErrorLimit', 15)
       atom.config.set('linter-gcc.gccIncludePaths', ' ')
       atom.config.set('linter-gcc.gccSuppressWarnings', true)
-      main.messages = {};
+      atom.config.set('linter-gcc.gccLintOnTheFly', false)
+      atom.config.set('linter-gcc.gccDebug', false)
+      atom.packages.activatePackage('language-c')
       return atom.packages.activatePackage('linter-gcc')
     })
   })
 
   it('finds one error in error.cpp', () => {
-    filename = __dirname + '/files/error.cpp'
-    return atom.workspace.open(filename).then(editor => {
-      main.lint(editor, editor.getPath(), editor.getPath()).then(function() {
-        var length = utility.flattenHash(main.messages).length
-        expect(length).toEqual(1);
-        console.log(utility.flattenHash(main.messages))
+    waitsForPromise(() => {
+      filename = __dirname + '/files/error.cpp'
+      return atom.workspace.open(filename).then(editor => {
+        return main.lint(editor, editor.getPath(), editor.getPath()).then(function() {
+          var length = utility.flattenHash(main.messages).length
+          expect(length).toEqual(1);
+        })
       })
     })
   })
 
   it('finds no errors in comment.cpp', () => {
-    filename = __dirname + '/files/comment.cpp'
-    return atom.workspace.open(filename).then(editor => {
-      main.lint(editor, editor.getPath(), editor.getPath()).then(function() {
-        var length = utility.flattenHash(main.messages).length
-        expect(length).toEqual(0);
+    waitsForPromise(() => {
+      filename = __dirname + '/files/comment.cpp'
+      return atom.workspace.open(filename).then(editor => {
+        return main.lint(editor, editor.getPath(), editor.getPath()).then(function() {
+          var length = utility.flattenHash(main.messages).length
+          expect(length).toEqual(0);
+        })
       })
     })
   })
 
   it('finds one error in error.c', () => {
-    filename = __dirname + '/files/error.c'
-    return atom.workspace.open(filename).then(editor => {
-      main.lint(editor, editor.getPath(), editor.getPath()).then(function() {
-        var length = utility.flattenHash(main.messages).length
-        expect(length).toEqual(1);
+    waitsForPromise(() => {
+      filename = __dirname + '/files/error.c'
+      return atom.workspace.open(filename).then(editor => {
+        return main.lint(editor, editor.getPath(), editor.getPath()).then(function() {
+          var length = utility.flattenHash(main.messages).length
+          expect(length).toEqual(1);
+        })
       })
     })
   })
 
   it('finds no errors in comment.c', () => {
-    filename = __dirname + '/files/comment.c'
-    return atom.workspace.open(filename).then(editor => {
-      main.lint(editor, editor.getPath(), editor.getPath()).then(function() {
-        var length = utility.flattenHash(main.messages).length
-        expect(length).toEqual(0);
+    waitsForPromise(() => {
+      filename = __dirname + '/files/comment.c'
+      return atom.workspace.open(filename).then(editor => {
+        return main.lint(editor, editor.getPath(), editor.getPath()).then(function() {
+          var length = utility.flattenHash(main.messages).length
+          expect(length).toEqual(0);
+        })
       })
     })
   })

@@ -7,13 +7,16 @@ describe('Configuration function tests', () => {
 
   beforeEach(() => {
     waitsForPromise(() => {
+      main.messages={};
       atom.config.set('linter-gcc.execPath', '/usr/bin/g++')
       atom.config.set('linter-gcc.gccDefaultCFlags', '-Wall')
       atom.config.set('linter-gcc.gccDefaultCppFlags', '-Wall -std=c++11')
       atom.config.set('linter-gcc.gccErrorLimit', 15)
       atom.config.set('linter-gcc.gccIncludePaths', ' ')
       atom.config.set('linter-gcc.gccSuppressWarnings', true)
-      main.messages={};
+      atom.config.set('linter-gcc.gccLintOnTheFly', false)
+      atom.config.set('linter-gcc.gccDebug', false)
+      atom.packages.activatePackage('language-c')
       return atom.packages.activatePackage('linter-gcc')
     })
   })

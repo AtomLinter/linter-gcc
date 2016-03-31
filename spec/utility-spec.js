@@ -12,6 +12,7 @@ describe('Utility functions', () => {
       atom.config.set('linter-gcc.gccIncludePaths', ' ')
       atom.config.set('linter-gcc.gccSuppressWarnings', true)
       atom.config.set('linter-gcc.gccLintOnTheFly', false)
+      atom.config.set('linter-gcc.gccDebug', false)
       atom.packages.activatePackage("language-c")
       atom.packages.activatePackage("language-javascript")
       return atom.packages.activatePackage('linter-gcc')
@@ -41,9 +42,4 @@ describe('Utility functions', () => {
       })
     })
   })
-
-  // it('Flattens an empty hash correctly', () => {
-  //   hash = {};
-  //   expect()
-  // })
 })
