@@ -1,3 +1,6 @@
+## 0.6.12
+* Make Paypal button smaller
+
 ## 0.6.11
 * Add Paypal button
 
