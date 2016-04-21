@@ -1,3 +1,7 @@
+## 0.6.10
+* Add recursive include path expansion
+* Add option to turn off ```-fmax-errors```
+
 ## 0.6.9
 * Fix linter-gcc reporting incorrect filename
 
