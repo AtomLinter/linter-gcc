@@ -1,5 +1,6 @@
 # linter-gcc
 [![Travis](https://img.shields.io/travis/hebaishi/linter-gcc.svg?style=flat-square)](https://travis-ci.org/hebaishi/linter-gcc) [![apm](https://img.shields.io/apm/dm/linter-gcc.svg?style=flat-square)](https://atom.io/packages/linter-gcc)
+[![Paypal](https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=44GUEE2BT7XVG)
 
 Linter plugin for [Linter](https://github.com/AtomLinter/Linter), provides an interface to gcc/g++.
 

@@ -1,3 +1,6 @@
+## 0.6.11
+* Add Paypal button
+
 ## 0.6.10
 * Add recursive include path expansion
 * Add option to turn off ```-fmax-errors```
