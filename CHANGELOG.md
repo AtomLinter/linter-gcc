@@ -1,3 +1,6 @@
+## 0.6.13
+* Fix error when modifying unsaved buffer
+
 ## 0.6.12
 * Make Paypal button smaller
 
