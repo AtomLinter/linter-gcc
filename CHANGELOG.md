@@ -1,3 +1,6 @@
+## 0.6.14
+* Add description to max-errors option
+
 ## 0.6.13
 * Fix error when modifying unsaved buffer
 
