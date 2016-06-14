@@ -8,6 +8,9 @@ Used with files with grammar "C", "C++" and ["C++14"](https://atom.io/packages/l
 
 Now with linting **on-the-fly**! This is a new feature so please open an issue if you encounter any problems.
 
+## Important info for Mac OSX users!
+If you have XCode installed on OSX, the `gcc/g++` commands will both link to `clang`. This can cause issues with the `-fmax-errors` option used by linter-gcc, which isn't recognised by clang. To properly install GCC, you need to install it with Homebrew (instructions [here](https://github.com/hebaishi/linter-gcc/issues/62)).
+
 ## Linter in action!
 
 ![linter-gcc screenshot](https://raw.githubusercontent.com/hebaishi/images/master/lintergcc_onthefly.gif)
