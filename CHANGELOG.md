@@ -1,3 +1,6 @@
+## 0.6.15
+* Fix undefined string error
+
 ## 0.6.14
 * Add description to max-errors option
 
