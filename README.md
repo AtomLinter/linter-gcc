@@ -15,6 +15,19 @@ If you have XCode installed on OSX, the `gcc/g++` commands will both link to `cl
 
 ![linter-gcc screenshot](https://raw.githubusercontent.com/hebaishi/images/master/lintergcc_onthefly.gif)
 
+## Using CMake compile settings
+linter-gcc can take compile settings from CMake. Using my gtf2tab project as an example, this is what you need to do:
+
+```bash
+git clone https://github.com/hebaishi/gtf2tab
+cd gtf2tab
+mkdir build
+cd build
+cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 ..
+```
+
+Running ```cmake``` with the ```-DCMAKE_EXPORT_COMPILE_COMMANDS``` flag generates a ```compile_commands.json``` file which linter-gcc can get the compile settings from. Then you simply open the project in Atom, and enter ```./build/compile_commands.json``` in the Compile Commands File setting of linter-gcc. Note that if you supply a valid ```compile_commands.json``` file, your include paths and compile flags configuration settings (described below) are ignored.
+
 ## File/Project-Specific settings
 
 Assuming you have the a file called ```sample.cpp``` open, linter-gcc performs the following actions:
