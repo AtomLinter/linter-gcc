@@ -19,6 +19,7 @@ describe('Configuration function tests', () => {
       atom.config.set('linter-gcc.gccErrorString', 'error')
       atom.config.set('linter-gcc.gccWarningString', 'warning')
       atom.config.set('linter-gcc.gccNoteString', 'note')
+      atom.config.set('linter-gcc.compileCommandsFile', ' ')
       atom.packages.activatePackage('language-c')
       return atom.packages.activatePackage('linter-gcc')
     })
