@@ -2,7 +2,8 @@ language: objective-c
 
 before_install:
   ## Install latest version of node
-  - nvm install node
+  - brew update
+  - brew upgrade node
 
 notifications:
   email:
