@@ -8,7 +8,7 @@ describe('Configuration function tests', () => {
   beforeEach(() => {
     waitsForPromise(() => {
       main.messages={};
-      atom.config.set('linter-gcc.execPath', '/usr/bin/g++')
+      atom.config.set('linter-gcc.execPath', 'g++')
       atom.config.set('linter-gcc.gccDefaultCFlags', '-Wall')
       atom.config.set('linter-gcc.gccDefaultCppFlags', '-Wall -std=c++11')
       atom.config.set('linter-gcc.gccErrorLimit', 15)
