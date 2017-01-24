@@ -1,3 +1,6 @@
+## 0.7.1
+* Fix for 'trim' undefined error and compile_commands.json
+
 ## 0.7.0
 * Add combined C/C++ compile path
 * Add CMake integration
