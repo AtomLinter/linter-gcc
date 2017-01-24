@@ -1,4 +1,6 @@
 # linter-gcc
+
+[![Join the chat at https://gitter.im/linter-gcc/Lobby](https://badges.gitter.im/linter-gcc/Lobby.svg)](https://gitter.im/linter-gcc/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Travis](https://img.shields.io/travis/hebaishi/linter-gcc.svg?style=flat-square)](https://travis-ci.org/hebaishi/linter-gcc) [![apm](https://img.shields.io/apm/dm/linter-gcc.svg?style=flat-square)](https://atom.io/packages/linter-gcc)
 [![Paypal](https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=44GUEE2BT7XVG)
 
