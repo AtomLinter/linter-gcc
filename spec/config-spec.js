@@ -8,7 +8,7 @@ describe('Configuration function tests', () => {
   beforeEach(() => {
     waitsForPromise(() => {
       main.messages={};
-      main.last_linted_files={};
+      main.last_linted_files=new Set([]);
       atom.config.set('linter-gcc.execPath', '/usr/bin/g++')
       atom.config.set('linter-gcc.gccDefaultCFlags', '-Wall')
       atom.config.set('linter-gcc.gccDefaultCppFlags', '-Wall -std=c++11')

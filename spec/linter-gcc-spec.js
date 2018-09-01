@@ -8,7 +8,7 @@ describe('The GCC provider for AtomLinter', () => {
   beforeEach(() => {
     waitsForPromise(() => {
       main.messages = {};
-      main.last_linted_files = {};
+      main.last_linted_files = new Set([]);
       atom.config.set('linter-gcc.execPath', '/usr/bin/g++')
       atom.config.set('linter-gcc.gccDefaultCFlags', '-c -Wall -o /dev/null')
       atom.config.set('linter-gcc.gccDefaultCppFlags', '-c -Wall -std=c++11 -o /dev/null')
