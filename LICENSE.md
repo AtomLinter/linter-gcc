@@ -1,4 +1,5 @@
 Original work Copyright (c) 2015 Husam Hebaishi
+
 Modified work Copyright (c) 2018 Tim Vincent
 
 Permission is hereby granted, free of charge, to any person obtaining
