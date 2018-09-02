@@ -101,7 +101,7 @@ describe('Configuration function tests', () => {
 
   it('Uses project-specific config file when it exists', () => {
     waitsForPromise(() => {
-      return atom.workspace.open(__dirname + '/files/project_test').then( () => {
+      atom.project.addPath(__dirname + '/files/project_test')
       return atom.workspace.open(__dirname + '/files/project_test/sub3/file.cpp').then( () => {
           var config = settings()
           expect(config.execPath).toEqual("exec_project")
@@ -110,7 +110,6 @@ describe('Configuration function tests', () => {
           expect(config.gccErrorLimit).toEqual(3)
           expect(config.gccIncludePaths).toEqual("includepath_project")
           expect(config.gccSuppressWarnings).toEqual(false)
-        })
       })
     })
   })
