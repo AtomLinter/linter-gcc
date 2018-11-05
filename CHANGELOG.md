@@ -1,3 +1,10 @@
+## 0.8.0
+* Updated to Linter v2
+* Added placemark (^~~) parsing for better highlighting if GCC 7+ is used
+* Added option to re-lint other files that have contributed messages to the current file
+* Cleanup messages from other files on save if using lintOnSave
+* Added separate handling of isystem include paths
+
 ## 0.7.1
 * Fix for 'trim' undefined error and compile_commands.json
 

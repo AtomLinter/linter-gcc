@@ -1,14 +1,16 @@
-# linter-gcc
+# linter-gcc2
 
-[![Join the chat at https://gitter.im/linter-gcc/Lobby](https://badges.gitter.im/linter-gcc/Lobby.svg)](https://gitter.im/linter-gcc/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Travis](https://img.shields.io/travis/hebaishi/linter-gcc.svg?style=flat-square)](https://travis-ci.org/hebaishi/linter-gcc) [![apm](https://img.shields.io/apm/dm/linter-gcc.svg?style=flat-square)](https://atom.io/packages/linter-gcc)
-[![Paypal](https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=44GUEE2BT7XVG)
+[![Build Status](https://travis-ci.com/tvincent056/linter-gcc2.svg?branch=master)](https://travis-ci.com/tvincent056/linter-gcc2) [![apm](https://img.shields.io/apm/dm/linter-gcc2.svg?style=flat-square)](https://atom.io/packages/linter-gcc2)
+
+This is a fork of [linter-gcc](https://github.com/hebaishi/linter-gcc), which seems to have been abandoned.
 
 Linter plugin for [Linter](https://github.com/AtomLinter/Linter), provides an interface to gcc/g++.
 
+Alternatively, this plugin also works with [atom-ide-diagnostics](https://github.com/facebook-atom/atom-ide-ui/tree/master/modules/atom-ide-ui/pkg/atom-ide-diagnostics), part of the [atom-ide-ui](https://github.com/facebook-atom/atom-ide-ui) collection of user interfaces.
+
 Used with files with grammar "C", "C++" and ["C++14"](https://atom.io/packages/language-cpp14).
 
-Now with linting **on-the-fly**! This is a new feature so please open an issue if you encounter any problems.
+Includes linting **on-the-fly**, though it is only partially tested. Please open an issue if you encounter any problems.
 
 ## Important info for Mac OSX users!
 If you have XCode installed on OSX, the `gcc/g++` commands will both link to `clang`. This can cause issues with the `-fmax-errors` option used by linter-gcc, which isn't recognised by clang. To properly install GCC, you need to install it with Homebrew (instructions [here](https://github.com/hebaishi/linter-gcc/issues/62)).
@@ -18,7 +20,7 @@ If you have XCode installed on OSX, the `gcc/g++` commands will both link to `cl
 ![linter-gcc screenshot](https://raw.githubusercontent.com/hebaishi/images/master/lintergcc_onthefly.gif)
 
 ## Using CMake compile settings
-linter-gcc can take compile settings from CMake. Using my gtf2tab project as an example, this is what you need to do:
+linter-gcc can take compile settings from CMake. This is what you need to do:
 
 ```bash
 git clone https://github.com/hebaishi/gtf2tab
