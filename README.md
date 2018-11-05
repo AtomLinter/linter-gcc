@@ -13,14 +13,14 @@ Used with files with grammar "C", "C++" and ["C++14"](https://atom.io/packages/l
 Includes linting **on-the-fly**, though it is only partially tested. Please open an issue if you encounter any problems.
 
 ## Important info for Mac OSX users!
-If you have XCode installed on OSX, the `gcc/g++` commands will both link to `clang`. This can cause issues with the `-fmax-errors` option used by linter-gcc, which isn't recognised by clang. To properly install GCC, you need to install it with Homebrew (instructions [here](https://github.com/hebaishi/linter-gcc/issues/62)).
+If you have XCode installed on OSX, the `gcc/g++` commands will both link to `clang`. This can cause issues with the `-fmax-errors` option used by linter-gcc2, which isn't recognised by clang. To properly install GCC, you need to install it with Homebrew (instructions [here](https://github.com/hebaishi/linter-gcc/issues/62)).
 
 ## Linter in action!
 
 ![linter-gcc screenshot](https://raw.githubusercontent.com/hebaishi/images/master/lintergcc_onthefly.gif)
 
 ## Using CMake compile settings
-linter-gcc can take compile settings from CMake. This is what you need to do:
+linter-gcc2 can take compile settings from CMake. For example:
 
 ```bash
 git clone https://github.com/hebaishi/gtf2tab
@@ -30,11 +30,11 @@ cd build
 cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 ..
 ```
 
-Running ```cmake``` with the ```-DCMAKE_EXPORT_COMPILE_COMMANDS``` flag generates a ```compile_commands.json``` file which linter-gcc can get the compile settings from. Then you simply open the project in Atom, and enter ```./build/compile_commands.json``` in the Compile Commands File setting of linter-gcc. Note that if you supply a valid ```compile_commands.json``` file, your include paths and compile flags configuration settings (described below) are ignored.
+Running ```cmake``` with the ```-DCMAKE_EXPORT_COMPILE_COMMANDS``` flag generates a ```compile_commands.json``` file which linter-gcc2 can get the compile settings from. Then you simply open the project in Atom, and enter ```./build/compile_commands.json``` in the Compile Commands File setting of linter-gcc2. Note that if you supply a valid ```compile_commands.json``` file, your include paths and compile flags configuration settings (described below) are ignored.
 
 ## File/Project-Specific settings
 
-Assuming you have the a file called ```sample.cpp``` open, linter-gcc performs the following actions:
+Assuming you have the a file called ```sample.cpp``` open, linter-gcc2 performs the following actions:
 
 1. Looks for file called ```sample.cpp.gcc-flags.json``` in the same directory as your source file (file-specific settings)
 2. Looks for a file called ```.gcc-flags.json``` in every subdirectory from the current up to your project root (subdirectory/project-specific settings)
@@ -66,7 +66,7 @@ In order to avoid unwanted behavior associated with having multiple projects ope
 ### Plugin installation
 Press ctrl and ',' or cmd and ',' , click on 'Packages', search 'linter gcc', or:
 ```
-$ apm install linter-gcc
+$ apm install linter-gcc2
 ```
 ### Reporting Issues
 
