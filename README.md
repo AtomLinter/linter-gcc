@@ -12,6 +12,8 @@ Used with files with grammar "C", "C++" and ["C++14"](https://atom.io/packages/l
 
 Includes linting **on-the-fly**, though it is only partially tested. Please open an issue if you encounter any problems.
 
+_For instructions on using this with Windows Subsystem for Linux (WSL), checkout the [Wiki](https://github.com/tvincent056/linter-gcc2/wiki)._
+
 ## Important info for Mac OSX users!
 If you have XCode installed on OSX, the `gcc/g++` commands will both link to `clang`. This can cause issues with the `-fmax-errors` option used by linter-gcc2, which isn't recognised by clang. To properly install GCC, you need to install it with Homebrew (instructions [here](https://github.com/hebaishi/linter-gcc/issues/62)).
 
