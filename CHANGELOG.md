@@ -1,3 +1,8 @@
+## 0.8.1
+* Remove Linter as a hard dependency (version 0.8.0 made it optional)
+* Remove atom-package-deps usage
+* Replace atom-linter dependency with sb-exec
+
 ## 0.8.0
 * Updated to Linter v2
 * Added placemark (^~~) parsing for better highlighting if GCC 7+ is used
