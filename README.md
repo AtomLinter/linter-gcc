@@ -4,9 +4,7 @@
 
 This is a fork of [linter-gcc](https://github.com/hebaishi/linter-gcc), which seems to have been abandoned.
 
-Linter plugin for [Linter](https://github.com/AtomLinter/Linter), provides an interface to gcc/g++.
-
-Alternatively, this plugin also works with [atom-ide-diagnostics](https://github.com/facebook-atom/atom-ide-ui/tree/master/modules/atom-ide-ui/pkg/atom-ide-diagnostics), part of the [atom-ide-ui](https://github.com/facebook-atom/atom-ide-ui) collection of user interfaces.
+This plugin provides an interface to gcc/g++ for linting and works with either [Linter](https://github.com/AtomLinter/Linter) or [atom-ide-ui](https://github.com/facebook-atom/atom-ide-ui) (through [atom-ide-diagnostics](https://github.com/facebook-atom/atom-ide-ui/tree/master/modules/atom-ide-ui/pkg/atom-ide-diagnostics)). You will need to manually install one or the other before it will function properly.
 
 Used with files with grammar "C", "C++" and ["C++14"](https://atom.io/packages/language-cpp14).
 
