@@ -32,6 +32,12 @@ cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 ..
 
 Running ```cmake``` with the ```-DCMAKE_EXPORT_COMPILE_COMMANDS``` flag generates a ```compile_commands.json``` file which linter-gcc2 can get the compile settings from. Then you simply open the project in Atom, and enter ```./build/compile_commands.json``` in the Compile Commands File setting of linter-gcc2. Note that if you supply a valid ```compile_commands.json``` file, your include paths and compile flags configuration settings (described below) are ignored.
 
+Unfortunately, CMake does not typically compile header files so the ```compile_commands.json``` file does not include entries for these files. To add them you can use a tool like [compdb](https://github.com/Sarcasm/compdb).
+
+```bash
+compdb -p ./ list > compile_commands.json
+```
+
 ## File/Project-Specific settings
 
 Assuming you have the a file called ```sample.cpp``` open, linter-gcc2 performs the following actions:
