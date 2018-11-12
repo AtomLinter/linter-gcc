@@ -76,4 +76,4 @@ $ apm install linter-gcc2
 ```
 ### Reporting Issues
 
-Please read the [Wiki](https://github.com/hebaishi/linter-gcc/wiki/) before reporting any issues.
+Please read the [Wiki](https://github.com/tvincent056/linter-gcc2/wiki) before reporting any issues.
