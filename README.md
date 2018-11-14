@@ -63,7 +63,7 @@ You can specify your settings in ```.gcc-flags.json```, at any level (file/subdi
 
 Note that the include paths need to be separated by commas. If this file is present, it will replace the settings you specified in the settings window. Relative paths (starting with ```.``` or ```..```) are expanded with respect to the root folder. Both ```execPath``` and ```gccIncludePaths``` are expanded.
 
-In order to avoid unwanted behavior associated with having multiple projects open, only the paths within the first project are used, and the package limits its search to 30 levels when looking for a configuration file. You can work with multiple projects, as long as each is open in a separate window. Additionally, within each project, you may have as many file/directory-specific configuration files as you wish.
+Paths are expanded relative to the project that contains the file being linted. The package limits its search to 30 levels when looking for a configuration file. Within each project, you may have as many file/directory-specific configuration files as you wish.
 
 ### Usage notes:
 * Add ```-fsyntax-only``` to your C/C++ compilation flags to prevent the generation of ```.gch``` files when linting headers
