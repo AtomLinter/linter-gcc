@@ -1,3 +1,7 @@
+## 0.8.2
+* Enable handling of multiple projects in one window
+* Add reference to compdb and new Wiki issues section hyperlink
+
 ## 0.8.1
 * Remove Linter as a hard dependency (version 0.8.0 made it optional)
 * Remove atom-package-deps usage
