@@ -1,7 +1,7 @@
 {
   "name": "linter-gcc2",
   "main": "./lib/main",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "description": "Lint C and C++ source files using gcc / g++",
   "keywords": [
     "lint",
