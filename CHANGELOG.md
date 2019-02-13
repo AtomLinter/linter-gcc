@@ -1,3 +1,6 @@
+## 0.8.5
+* Use method to read compile_commands and config files which will properly detect modifications
+
 ## 0.8.2
 * Enable handling of multiple projects in one window
 * Add reference to compdb and new Wiki issues section hyperlink
