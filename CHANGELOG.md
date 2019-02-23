@@ -1,3 +1,7 @@
+## 0.8.6
+* Add iquote path when using lintOnTheFly to mimic gcc include path behavior
+* Add default position property to default message created when parsing fails
+
 ## 0.8.5
 * Use method to read compile_commands and config files which will properly detect modifications
 
