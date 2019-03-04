@@ -13,7 +13,7 @@ Includes linting **on-the-fly**, though it is only partially tested. Please open
 _For instructions on using this with Windows Subsystem for Linux (WSL), checkout the [Wiki](https://github.com/tvincent056/linter-gcc2/wiki)._
 
 ## Important info for Mac OSX users!
-If you have XCode installed on OSX, the `gcc/g++` commands will both link to `clang`. This can cause issues with the `-fmax-errors` option used by linter-gcc2, which isn't recognised by clang. To properly install GCC, you need to install it with Homebrew (instructions [here](https://github.com/hebaishi/linter-gcc/issues/62)).
+If you have XCode installed on OSX, the `gcc/g++` commands will both link to `clang`. This can cause issues with the `-fmax-errors` option used by linter-gcc2, which isn't recognised by clang. To properly install GCC, you need to install it with Homebrew (instructions [here](https://github.com/hebaishi/linter-gcc/issues/62)). You will likely also need to add the flag `-fsyntax-only` to your C Flags or C++ Flags.
 
 ## Linter in action!
 

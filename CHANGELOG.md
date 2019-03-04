@@ -1,3 +1,6 @@
+## 0.8.7
+* Fix bug causing files to only use compile_commands.json args on first lint
+
 ## 0.8.6
 * Add iquote path when using lintOnTheFly to mimic gcc include path behavior
 * Add default position property to default message created when parsing fails
