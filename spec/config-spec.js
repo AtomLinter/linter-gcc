@@ -8,12 +8,16 @@ describe('Configuration function tests', () => {
   beforeEach(() => {
     waitsForPromise(() => {
       main.messages={};
+      main.last_linted_files=new Set([]);
       atom.config.set('linter-gcc.execPath', '/usr/bin/g++')
       atom.config.set('linter-gcc.gccDefaultCFlags', '-Wall')
       atom.config.set('linter-gcc.gccDefaultCppFlags', '-Wall -std=c++11')
       atom.config.set('linter-gcc.gccErrorLimit', 15)
       atom.config.set('linter-gcc.gccIncludePaths', ' ')
+      atom.config.set('linter-gcc.gccISystemPaths', ' ')
       atom.config.set('linter-gcc.gccSuppressWarnings', true)
+      atom.config.set('linter-gcc.gccRelintMessageSources', false)
+      atom.config.set('linter-gcc.gcc7orGreater', false)
       atom.config.set('linter-gcc.gccLintOnTheFly', false)
       atom.config.set('linter-gcc.gccDebug', false)
       atom.config.set('linter-gcc.gccErrorString', 'error')
@@ -97,7 +101,7 @@ describe('Configuration function tests', () => {
 
   it('Uses project-specific config file when it exists', () => {
     waitsForPromise(() => {
-      return atom.workspace.open(__dirname + '/files/project_test').then( () => {
+      atom.project.addPath(__dirname + '/files/project_test')
       return atom.workspace.open(__dirname + '/files/project_test/sub3/file.cpp').then( () => {
           var config = settings()
           expect(config.execPath).toEqual("exec_project")
@@ -106,7 +110,6 @@ describe('Configuration function tests', () => {
           expect(config.gccErrorLimit).toEqual(3)
           expect(config.gccIncludePaths).toEqual("includepath_project")
           expect(config.gccSuppressWarnings).toEqual(false)
-        })
       })
     })
   })
