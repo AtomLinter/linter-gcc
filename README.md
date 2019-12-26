@@ -1,5 +1,6 @@
 # linter-gcc
 
+[![Join the chat at https://gitter.im/linter-gcc/Lobby](https://badges.gitter.im/linter-gcc/Lobby.svg)](https://gitter.im/linter-gcc/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.com/AtomLinter/linter-gcc.svg?branch=master)](https://travis-ci.com/AtomLinter/linter-gcc) [![apm](https://img.shields.io/apm/dm/linter-gcc.svg?style=flat-square)](https://atom.io/packages/linter-gcc)
 
 This plugin provides an interface to gcc/g++ for linting and works with [Linter](https://github.com/AtomLinter/Linter).
