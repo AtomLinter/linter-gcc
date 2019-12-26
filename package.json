@@ -1,5 +1,5 @@
 {
-  "name": "linter-gcc2",
+  "name": "linter-gcc",
   "main": "./lib/main",
   "version": "0.8.7",
   "description": "Lint C and C++ source files using gcc / g++",
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/tvincent056/linter-gcc2"
+    "url": "https://github.com/AtomLinter/linter-gcc"
   },
   "license": "MIT",
   "engines": {
