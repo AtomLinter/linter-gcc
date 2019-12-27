@@ -1,7 +1,7 @@
 {
   "name": "linter-gcc",
   "main": "./lib/main",
-  "version": "0.7.1",
+  "version": "0.8.7",
   "description": "Lint C and C++ source files using gcc / g++",
   "keywords": [
     "lint",
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/hebaishi/linter-gcc"
+    "url": "https://github.com/AtomLinter/linter-gcc"
   },
   "license": "MIT",
   "engines": {
@@ -35,8 +35,8 @@
     }
   },
   "dependencies": {
-    "atom-linter": "^4.3.3",
     "atom-package-deps": "^4.6.0",
+    "sb-exec": "^1.0.4",
     "shelljs": "^0.5.0",
     "fs-extra": "^0.26.1",
     "tempfile": "^1.1.0",
@@ -47,7 +47,7 @@
     "linter"
   ],
   "devDependencies": {
-    "eslint": "latest"
+    "eslint": "5.x.x"
   },
   "eslintConfig": {
     "env": {
@@ -59,6 +59,7 @@
       "atom": true
     }
   },
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module"

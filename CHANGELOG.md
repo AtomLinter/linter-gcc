@@ -1,3 +1,29 @@
+## 0.8.7
+* Fix bug causing files to only use compile_commands.json args on first lint
+
+## 0.8.6
+* Add iquote path when using lintOnTheFly to mimic gcc include path behavior
+* Add default position property to default message created when parsing fails
+
+## 0.8.5
+* Use method to read compile_commands and config files which will properly detect modifications
+
+## 0.8.2
+* Enable handling of multiple projects in one window
+* Add reference to compdb and new Wiki issues section hyperlink
+
+## 0.8.1
+* Remove Linter as a hard dependency (version 0.8.0 made it optional)
+* Remove atom-package-deps usage
+* Replace atom-linter dependency with sb-exec
+
+## 0.8.0
+* Updated to Linter v2
+* Added placemark (^~~) parsing for better highlighting if GCC 7+ is used
+* Added option to re-lint other files that have contributed messages to the current file
+* Cleanup messages from other files on save if using lintOnSave
+* Added separate handling of isystem include paths
+
 ## 0.7.1
 * Fix for 'trim' undefined error and compile_commands.json
 

@@ -87,6 +87,7 @@ describe('Configuration function tests', () => {
 
   it('Uses upper-level config file when it exists', () => {
     waitsForPromise(() => {
+      atom.project.addPath(__dirname + '/files/project_test')
       return atom.workspace.open(__dirname + '/files/project_test/sub4/subsub2/file.cpp').then(() => {
           var config = settings()
           expect(config.execPath).toEqual("exec_updir")
