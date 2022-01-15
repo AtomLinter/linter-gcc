@@ -37,7 +37,7 @@
   "dependencies": {
     "atom-package-deps": "^4.6.0",
     "sb-exec": "^1.0.4",
-    "shelljs": "^0.5.0",
+    "shelljs": "^0.8.5",
     "fs-extra": "^0.26.1",
     "tempfile": "^1.1.0",
     "split-string": "^0.1.0",
